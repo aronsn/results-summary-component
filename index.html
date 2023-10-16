@@ -1,36 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="style.css">
-  
+
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
-<body style="margin:0;padding:0">  
-  <div class="root">
-    <div class="card">
-      <p style="margin: 0;">Your Result</p>
-      <div class="circle">
-        <h1>76</h1>
-        <p>of 100</p>
-      </div>
+
+<body style="margin:0;padding:0">
+  <div class="results-summary-card">
+    <div class="result-container">
+      <p class="result-heading" style="margin: 0;">Your Result</p>
+      <section class="circle">
+        <div>
+          <p class="average-score">76</p>
+          <p>of 100</p>
+        </div>
+      </section>
       <section class="feedback">
-        <h2>Great</h2>
+        <h1>Great</h1>
         <p>You scored higher than 65% of the people who taken these tests.</p>
       </section>
     </div>
-
+    <div class="summary-container">
+      <h3>Summary</h3>
+      <section class="field red-text-background">
+        <i class="icon"><img src="assets/images/icon-reaction.svg" height="23px" alt="SVG Image" /></i>
+        <p class="ability">Reaction</p>
+        <p class="score">80 &nbsp<span class="total-score">/ 100</span></p>
+      </section>
+      <section class="field yellow-text-background">
+        <i class="icon"><img src="assets/images/icon-memory.svg" height="23px" alt="SVG Image" /></i>
+        <p class="ability">Memory</p>
+        <p class="score">92 &nbsp<span class="total-score">/ 100</span></p>
+      </section>
+      <section class="field green-text-background">
+        <i class="icon"><img src="assets/images/icon-verbal.svg" height="23px" alt="SVG Image" /></i>
+        <p class="ability">Verbal</p>
+        <p class="score">61 &nbsp<span class="total-score">/ 100</span></p>
+      </section>
+      <section class="field blue-text-background">
+        <i class="icon"><img src="assets/images/icon-visual.svg" height="23px" alt="SVG Image" /></i>
+        <p class="ability">Visual</p>
+        <p class="score">72 &nbsp<span class="total-score">/ 100</span></p>
+      </section>
+      <button class="button" type="button">Continue</button>
+    </div>
   </div>
-</body> 
+</body>
 
 <!-- <div class="attribution">
   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
@@ -59,4 +93,5 @@ Visual
 
 Continue
 -->
+
 </html>

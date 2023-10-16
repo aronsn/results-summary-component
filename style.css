@@ -1,32 +1,67 @@
 @font-face {
-    font-family: 'HankenGrotesk';
-    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('tff'),
-         url('assets/fonts/static/HankenGrotesk-Bold.ttf') format('tff'),
-         url('assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('tff'),
-         url('assets/fonts/static/HankenGrotesk-Medium.ttf') format('tff');
-    /* You can include other font formats as needed */
+    font-family: 'Hanken Grotesk';
+    src: url('assets/fonts/static/HankenGrotesk-Regular.woff2') format('woff2'),
+        url('assets/fonts/static/HankenGrotesk-Regular.woff') format('woff'),
+        url('assets/fonts/static/HankenGrotesk-Medium.woff2') format('woff2'),
+        url('assets/fonts/static/HankenGrotesk-Medium.woff') format('woff'),
+        url('assets/fonts/static/HankenGrotesk-ExtraBold.woff2') format('woff2'),
+        url('assets/fonts/static/HankenGrotesk-ExtraBold.woff') format('woff'),
+        url('assets/fonts/static/HankenGrotesk-Bold.woff2') format('woff2'),
+        url('assets/fonts/static/HankenGrotesk-Bold.woff') format('woff');
+}
+
+:root {
+    --light-red:  hsl(0, 100%, 67%);
+    --orangey-yellow:  hsl(39, 100%, 56%);
+    --green-teal:  hsl(166, 100%, 37%);
+    --cobalt-blue:  hsl(234, 85%, 45%);
+    --dark-grey-blue: hsl(224, 30%, 27%);
   }
 
 body {
-font-family: 'HankenGrotesk', Verdana, Tahoma, sans-serif;
-}
-  
-.root {
-    color: white;   
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
-.card {
+body p {
+    font-size: 18px;
+}
+
+
+.results-summary-card {}
+
+.result-container {
     text-align: center;
-    padding:  0 48px 48px 48px;
+    padding: 0 40px 40px 40px;
     border-radius: 0 0 30px 30px;
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
 }
 
-.card h1, p {
-    
+.result-heading {
+    padding: 24px;
+    opacity: 0.8;
 }
 
-.card .circle {
+
+.circle .average-score {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 1000;
+    opacity: 1;
+}
+
+.circle p {
+    margin: 0;
+    font-size: 16px;
+    opacity: 0.5;
+
+}
+
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     padding: 16px;
@@ -36,3 +71,83 @@ font-family: 'HankenGrotesk', Verdana, Tahoma, sans-serif;
     background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
 }
 
+
+.feedback h1 {
+    margin-bottom: 8px;
+}
+
+.feedback p {
+    opacity: 0.7;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.summary-container {
+    margin: 0 24px;
+}
+
+.summary-container h3 {
+    color: var(--dark-grey-blue);
+}
+
+.field {
+    display: flex;
+    border-radius: 10px;
+    padding: 16px 16px;
+    margin-bottom: 16px;
+}
+
+.field .icon {
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.field .ability {
+    margin-right: auto;
+
+}
+
+.field .score {
+    color: var(--dark-grey-blue);
+}
+
+.field .total-score {
+    color: hsla(224, 30%, 27%, 0.5);
+}
+
+.field p {
+    font-weight: 600;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    background-color: var(--dark-grey-blue);
+    border-radius: 40px 40px 40px 40px;
+    border: none;
+    margin-top: 8px;
+}
+
+.red-text-background {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+.yellow-text-background {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+.green-text-background {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+.blue-text-background {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
