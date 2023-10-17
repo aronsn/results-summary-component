@@ -9,18 +9,10 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 
   <title> Results summary component </title>
-
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
+<script>
+  fetch("data.json").then(response => response.json()).then(data => console.log(data))
+</script>
 
 <body style="margin:0;padding:0">
   <div class="results-summary-card">
@@ -63,4 +55,5 @@
     </div>
   </div>
 </body>
+
 </html>
