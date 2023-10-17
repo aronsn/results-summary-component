@@ -23,9 +23,20 @@
     background-color: hsla(0, 100%, 67%, 0.1);
 }
 
+.red-text-background:hover {
+    cursor: pointer;
+    background: hsla(0, 100%, 67%, 0.2);
+}
+
 .yellow-text-background {
     color: hsl(39, 100%, 56%);
     background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.yellow-text-background:hover {
+    cursor: pointer;
+    background: hsla(39, 100%, 56%, 0.2);
+
 }
 
 .green-text-background {
@@ -33,9 +44,19 @@
     background-color: hsla(166, 100%, 37%, 0.1);
 }
 
+.green-text-background:hover {
+    cursor: pointer;
+    background-color: hsla(166, 100%, 37%, 0.2);
+}
+
 .blue-text-background {
     color: hsl(234, 85%, 45%);
     background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.blue-text-background:hover {
+    cursor: pointer;
+    background-color: hsla(234, 85%, 45%, 0.2);
 }
 
 body {
@@ -111,7 +132,7 @@ body p {
 .field {
     display: flex;
     border-radius: 10px;
-    padding: 16px 16px;
+    padding: 16px;
     margin-bottom: 16px;
 }
 
@@ -141,19 +162,20 @@ body p {
     align-items: center;
 }
 
-.button {
+button {
     width: 100%;
     padding: 16px;
     font-size: 18px;
     font-weight: 400;
     color: hsl(0, 0%, 100%);
-    background-color: var(--dark-grey-blue);
+    background: var(--dark-grey-blue);
     border-radius: 40px 40px 40px 40px;
     border: none;
     margin-top: 8px;
+    cursor: pointer;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 680px) {
     /* Desktop */
     html,
     body {
@@ -173,10 +195,11 @@ body p {
         transform: translate(-50%, -50%);
         border-radius: 30px;
         box-shadow: 20px 20px 30px 1px hsla(241, 100%, 89%, 0.491);
+        transition: ease 0.2s;
     }
 
     .result-container {
-        width: 225px;
+        width: 240px;
         border-radius: 30px;
         padding: 40px;
         display: flex;
@@ -193,28 +216,39 @@ body p {
     }
 
     .circle {
-        width: 130px;
-        height: 130px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle .average-score{
+        font-size: 60px;
     }
 
     .summary-container {
         margin: 0;
-        width: 300px;
+        width: 280px;
         padding: 40px;
     }
 
     .summary-container h3 {
         margin-top: 0;
     }
+    .field {
+        margin-bottom: 14px;
+    }
 
-    .button:hover {
-        cursor: pointer;
+    .field p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 16px;
+    }
+
+    button:hover{
         background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-        transition: 2s ease;
     }
 
-    .field:hover {
-        cursor: pointer;
-        background: hsla(241, 100%, 89%, 0.491);
-    }
 }
