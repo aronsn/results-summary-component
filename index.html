@@ -8,16 +8,13 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="style.css">
 
-  <title> Results summary component </title>
+  <title> Results Summary Component </title>
 </head>
-<script>
-  fetch("data.json").then(response => response.json()).then(data => console.log(data))
-</script>
 
 <body style="margin:0;padding:0">
   <div class="results-summary-card">
     <div class="result-container">
-      <p class="result-heading" style="font-size: 18px;">Your Result</p>
+      <h1 class="result-heading" style="font-size: 18px;">Your Result</h1>
       <section class="circle">
         <div>
           <p class="average-score">76</p>
@@ -25,35 +22,19 @@
         </div>
       </section>
       <section class="feedback">
-        <h1>Great</h1>
+        <h2>Great</h2>
         <p>You scored higher than 65% of the people who taken these tests.</p>
       </section>
     </div>
     <div class="summary-container">
       <h3>Summary</h3>
-      <section class="field red-text-background">
-        <i class="icon"><img src="assets/images/icon-reaction.svg" height="23px" alt="SVG Image" /></i>
-        <p class="ability">Reaction</p>
-        <p class="score">80 &nbsp<span class="total-score">/ 100</span></p>
-      </section>
-      <section class="field yellow-text-background">
-        <i class="icon"><img src="assets/images/icon-memory.svg" height="23px" alt="SVG Image" /></i>
-        <p class="ability">Memory</p>
-        <p class="score">92 &nbsp<span class="total-score">/ 100</span></p>
-      </section>
-      <section class="field green-text-background">
-        <i class="icon"><img src="assets/images/icon-verbal.svg" height="23px" alt="SVG Image" /></i>
-        <p class="ability">Verbal</p>
-        <p class="score">61 &nbsp<span class="total-score">/ 100</span></p>
-      </section>
-      <section class="field blue-text-background">
-        <i class="icon"><img src="assets/images/icon-visual.svg" height="23px" alt="SVG Image" /></i>
-        <p class="ability">Visual</p>
-        <p class="score">72 &nbsp<span class="total-score">/ 100</span></p>
-      </section>
+      <div id="summary">
+      </div>
       <button class="button" type="button">Continue</button>
     </div>
   </div>
 </body>
+
+<script src="script.js"></script>
 
 </html>
