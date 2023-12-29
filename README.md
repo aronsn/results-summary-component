@@ -10,13 +10,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,6 +23,9 @@ Users should be able to:
 - **Bonus**: Use the local JSON data to dynamically populate the content
 
 ### Screenshot
+![desktop](https://github.com/aronsn/results-summary-component-main/assets/54532695/1b2ef1d9-fef2-438b-b978-dfc43ca1834e)
+![mobile](https://github.com/aronsn/results-summary-component-main/assets/54532695/31ac18c6-de1e-4c3a-ba6a-cde65de26ef3)
+
 
 
 ### Links
