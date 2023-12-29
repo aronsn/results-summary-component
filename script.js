@@ -8,11 +8,13 @@ const COLORS = {
 const createElement = (text_color_class) => {
     const child_container = document.createElement('section');
 
+    // A row element
     const icon_element = document.createElement('i');
     const image_element = document.createElement('img');
     const category_element = document.createElement('p');
     const score_element = document.createElement('p');
 
+    // Creating the correct hierarchy in the DOM-tree
     icon_element.appendChild(image_element);
     child_container.appendChild(icon_element);
     child_container.appendChild(category_element);
