@@ -1,4 +1,4 @@
-# Frontend Mentor - Results summary component solution
+# Frontend Mentor - Results Summary Component Solution
 
 This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -25,8 +25,6 @@ Users should be able to:
 ### Screenshot
 ![desktop](https://github.com/aronsn/results-summary-component-main/assets/54532695/1b2ef1d9-fef2-438b-b978-dfc43ca1834e)
 ![mobile](https://github.com/aronsn/results-summary-component-main/assets/54532695/31ac18c6-de1e-4c3a-ba6a-cde65de26ef3)
-
-
 
 ### Links
 
