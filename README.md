@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution](https://aronsn.github.io/results-summary-component-main/)
+- Solution URL: [solution](https://aronsn.github.io/results-summary-component/)
 
 ## My process
 
